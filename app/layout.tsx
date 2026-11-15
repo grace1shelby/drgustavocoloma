@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./classic.css";
+import "./patients.css";
 
 export const metadata: Metadata = {
   title: "Dr. Gustavo Coloma Valverde | Neurocirugía",
