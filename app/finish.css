@@ -32,3 +32,72 @@ main img{object-position:50% 50%;margin-inline:auto}
 .photo-card>img,.doctor-profile-photo,.steps-visual img,.welcome-image img,.medical-photo img{object-position:50% 50%}
 .lightbox>img{margin-inline:auto;object-position:50% 50%}
 
+
+/* Shared CTA baselines and non-overlapping responsive controls. */
+.floating-book{display:none!important}
+.care-paths{grid-template-rows:repeat(5,auto);row-gap:0;align-items:stretch}
+.care-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;min-width:0;align-items:start}
+.care-card>*{min-width:0}
+.patient-section .care-card h3{min-height:0;max-width:none;margin-top:0;margin-bottom:16px}
+.care-card .care-label{margin-top:0;margin-bottom:10px;align-self:start}
+.patient-section .care-card>p:not(.care-label){margin-top:0;margin-bottom:20px}
+.care-card .care-link{align-self:end;margin:0;min-height:48px;padding:14px 0;line-height:1.5;display:flex;align-items:center;justify-content:space-between;width:100%;gap:12px}
+.care-card .ui-icon{width:16px;height:16px;min-width:16px;padding:0;background:none;border:0;border-radius:0;stroke-width:1.8}
+.patient-topic.article{height:100%;min-width:0}
+.topic-card-copy{min-width:0;flex:1}
+.patient-topic.article footer{min-height:44px;align-items:center;gap:12px}
+.button,.nav-cta,.gallery-more{max-width:100%;white-space:normal;text-align:center;line-height:1.5;box-sizing:border-box;flex-shrink:0}
+.button>.ui-icon,.nav-cta>.ui-icon{flex:none;padding:0;background:none;border-radius:0}
+.button:active,.button:hover{transform:none}
+.patient-reassurance{display:grid;grid-template-columns:29px minmax(0,1fr) auto;align-items:center;gap:16px;margin-top:25px}
+.patient-reassurance p{max-width:none;min-width:0}
+.patient-reassurance a{margin:0;min-height:44px;white-space:normal;justify-content:flex-end}
+.resource-tools{min-width:0}.filter-group{max-width:100%}.filter-group button{flex-shrink:0;min-height:44px}
+.research-tabs{gap:6px}.research-tabs button{white-space:normal;text-align:left}
+summary{min-width:0}summary .disclosure-icon{flex-shrink:0}
+.footer{padding-bottom:30px}
+@media(max-width:900px){.nav{gap:15px}.links{gap:16px}.links>a{font-size:14px}}
+@media(max-width:800px){
+.care-paths{grid-template-columns:1fr;grid-template-rows:none;gap:32px}
+.care-card{display:flex;flex-direction:column;grid-row:auto;gap:0;align-items:stretch}
+.patient-section .care-card h3{margin-bottom:12px}
+.care-card .care-link{margin-top:auto}
+.care-photo{width:100%;height:220px;flex-shrink:0}
+.patient-reassurance{grid-template-columns:29px minmax(0,1fr);gap:12px}
+.patient-reassurance a{grid-column:2;justify-content:flex-start;width:fit-content;margin:0}
+.links.open{position:static;grid-column:1/-1;width:100%;padding:12px 0 6px;box-shadow:none;gap:8px;align-items:stretch}
+.nav{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center}
+.nav .brand{max-width:none;font-size:17px}.menu{justify-self:end;display:flex}
+.links>a{font-size:16px;min-height:44px;display:flex;align-items:center;padding:8px 0}
+.links .nav-cta{width:fit-content;display:inline-flex;gap:12px;justify-content:center;align-items:center;border-radius:999px;padding:11px 20px}
+.links .language{margin:4px 0;gap:8px}
+.contact.patient-section .booking-grid{grid-template-columns:1fr;gap:30px}
+.contact.patient-section .booking-panel{width:100%;margin:0}
+.patient-section .resource-tools{display:flex;flex-direction:column;align-items:stretch;gap:18px}
+.patient-section .search{width:100%;max-width:none;margin:0}
+.gallery .filter-group{flex-wrap:wrap;width:fit-content}
+.gallery .filter-group button{flex:0 1 auto;white-space:normal}
+.research-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.research-tabs button{width:100%;height:100%;padding:10px 12px;min-height:44px}
+.research-tabs small{white-space:nowrap}
+.footer{padding-bottom:28px}
+}
+@media(max-width:480px){
+.actions{width:100%;align-items:center}
+.hero .button{width:fit-content;max-width:100%}
+.patient-section .filter-group{gap:3px}
+.learn .filter-group{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.learn .filter-group button{font-size:12px;padding:8px 5px;min-width:0;white-space:normal;line-height:1.3;min-height:44px}
+.care-photo{height:200px}
+.contact.patient-section .call-button{font-size:13px;padding:12px 16px;gap:10px}
+.contact.patient-section .booking-panel{padding:24px}
+.topic-dialog{max-height:calc(100dvh - 24px);max-width:calc(100vw - 24px)}
+.topic-dialog article{padding:62px 22px 25px}
+.topic-dialog .button{width:100%;margin-top:20px}
+.lightbox-controls{gap:10px;padding:12px}
+.lightbox-controls button{width:44px;min-width:44px;height:44px;padding:10px}
+.lightbox-controls p{font-size:12px;min-width:0}
+.doctor-heading{grid-template-columns:90px minmax(0,1fr);gap:16px}
+.credentials.patient-section .doctor-heading h2{font-size:25px}
+}
+.doctor-proof{grid-template-columns:repeat(3,minmax(0,1fr))}.doctor-proof>div{min-width:0}.doctor-proof span{overflow-wrap:anywhere}@media(max-width:480px){.doctor-proof>div{padding-left:10px}.doctor-proof strong{font-size:22px}.doctor-proof span{font-size:10px}}
